@@ -2,3 +2,142 @@
  * @file
  * Presentation-specific styles.
  */
+
+img {
+    display: block;
+}
+
+.fa-drupal {
+    color: #0678be;
+}
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.reveal a {
+    color: inherit;
+}
+
+.reveal ul {
+    font-size: 1.5em;
+    align-self: center;
+    justify-self: center;
+}
+@media (min-width: 1280px) {
+    .reveal ul {
+        width: calc(80% - 1em);
+    }
+}
+
+.reveal pre code {
+    background-color: #f8f8f8;
+    border: 1ex solid #f8f8f8;
+    font-size: 125%;
+    line-height: 1.1em;
+}
+
+.header .twitter {
+    margin-left: auto;
+    opacity: 0.5;
+}
+.header .twitter .fa-twitter {
+    color: inherit;
+}
+
+.reveal .slides section.title {
+    padding: 0;
+}
+.reveal .slides section.title .content {
+    grid-template-columns: auto;
+    grid-template-areas: "title" "description";
+}
+.slides .title .presentation-url {
+    grid-area: header;
+    text-align: right;
+    font-size: 0.8em;
+    align-self: center;
+    opacity: 0.5;
+}
+
+#about {
+    background-image: url('../images/eaglebluffs.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#about a {
+    color: rgb(51, 51, 51);
+}
+#about aside {
+    background-color: rgba(255, 255, 255, .8);
+    color: #000;
+    float: right;
+    font-size: 1.5em;
+    padding: 5vmin;
+}
+#about aside hr {
+    color: rgba(0,0,0, 0.075);
+    margin: 2.5vmin 0;
+}
+#about aside ul {
+    display: block;
+    font-size: inherit;
+    list-style: none;
+    margin: 2.5vmin 0 0;
+    width: auto;
+}
+#about .projects {
+    text-align: center;
+}
+#about .accounts a .fa + span,
+#about .projects a {
+    /*text-decoration: underline rgba(51, 51, 51, 0.1);*/
+}
+#about .accounts a:hover .fa + span,
+#about .projects a:hover {
+    text-decoration: underline rgba(51, 51, 51, 0.65);
+}
+#about .accounts {
+    display: grid;
+    justify-content: center;
+}
+#about .accounts a {
+    display: flex;
+    align-items: baseline;
+}
+#about .accounts .fa {
+    margin-right: 0.25ex;
+    width: 1.8ex;
+}
+
+#ga-module {
+    background-image: url("../images/ga-module.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.commands table {
+    margin: 0;
+}
+.commands table th {
+    text-align: right;
+}
+.commands table th, .commands table td {
+    border-bottom: none;
+}
+.commands table td + td {
+    opacity: 0.5;
+}
+
+.commands table + figure {
+    margin-top: 2em;
+}
+
+#demo img {
+    margin: auto;
+    max-height: 50vmin;
+    max-width: 50vmin;
+    width: 100%;
+    height: 100%;
+}
