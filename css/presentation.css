@@ -59,6 +59,12 @@ img {
     opacity: 0.5;
 }
 
+@media (max-width: 480px) {
+    #title .presentation-url {
+        display: none;
+    }
+}
+
 #about {
     background-image: url('../images/eaglebluffs.jpg');
     background-size: cover;
