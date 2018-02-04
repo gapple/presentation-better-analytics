@@ -1,0 +1,6 @@
+services:
+  umami_ga.analytics_subscriber:
+    class: Drupal\umami_ga\EventSubscriber\AnalyticsSubscriber
+    arguments: ['@current_route_match']
+    tags:
+      - { name: event_subscriber }

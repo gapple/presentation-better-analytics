@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Functions for the Umami Analytics module.
+ */
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function umami_ga_preprocess_node(&$variables) {
+
+  $node = $variables['node'];
+
+  if ($node->bundle() == 'article' && $variables['view_mode'] == 'full') {
+    $variables['#attached']['library'][] = 'umami_ga/articles';
+  }
+}

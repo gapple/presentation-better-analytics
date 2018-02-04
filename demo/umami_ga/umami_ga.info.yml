@@ -1,0 +1,7 @@
+type: module
+core: 8.x
+name: Umami Analytics
+description: Umami Analytics
+
+dependencies:
+  - ga
